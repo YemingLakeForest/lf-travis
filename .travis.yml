@@ -1,4 +1,4 @@
 language: java
 jdk:
   - oraclejdk8
-script: mvn clean install sonar:sonar -Dsonar.host.url=http://7e6b8744.ngrok.io
+script: mvn clean install org.jacoco:jacoco-maven-plugin:0.7.6-SNAPSHOT:prepare-agent sonar:sonar -Dsonar.host.url=http://7e6b8744.ngrok.io
